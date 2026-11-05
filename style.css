@@ -916,3 +916,8 @@ header, main, footer {
         height: 300px;
     }
 }
+@media (max-width: 768px) {
+    .project-image img {
+        object-fit: contain;
+    }
+}
