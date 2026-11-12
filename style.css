@@ -925,3 +925,10 @@ header, main, footer {
         display: block;
     }
 }
+/* KEEP NORTHLINE LOGO ANIMATION */
+@media (prefers-reduced-motion: reduce) {
+    .visual-art .orbit {
+        animation-duration: 18s !important;
+        animation-iteration-count: infinite !important;
+    }
+}
