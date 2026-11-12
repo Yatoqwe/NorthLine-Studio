@@ -647,13 +647,24 @@ button {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-    }
-}
 
+    *, *::before, *::after {
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+    }
+
+    .orbit {
+
+        animation: rotate 18s linear infinite !important;
+
+    }
+
+}
 /* TABLET */
 
 @media (max-width: 1000px) {
@@ -923,12 +934,5 @@ header, main, footer {
         height: 100%;
         object-fit: contain;
         display: block;
-    }
-}
-/* KEEP NORTHLINE LOGO ANIMATION */
-@media (prefers-reduced-motion: reduce) {
-    .visual-art .orbit {
-        animation-duration: 18s !important;
-        animation-iteration-count: infinite !important;
     }
 }
